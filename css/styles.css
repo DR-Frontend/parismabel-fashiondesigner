@@ -1,3 +1,6 @@
+body{
+  overflow-x: hidden;
+}
 section,
 footer{
   width: 80%;
@@ -18,7 +21,7 @@ footer{
   width: 100%;
   padding: 10px;
   background-color: #000;
-  z-index: 999;
+  z-index: 9999;
 
   display: flex;
   justify-content: space-between;
@@ -112,10 +115,16 @@ footer{
 
 
 /* PARA ELLAS/ELLOS */
+.her,
+.him{
+  display: flex;
+  justify-content: center;
+}
 .her img,
 .him img{
   width: 250px;
   padding: 20px 0;
+  margin: 0 auto;
 }
 .forher h1,
 .forhim h1{
@@ -135,17 +144,16 @@ footer{
 /* STYLES2 */
 .styles2 > article{
   margin-bottom: 30px;
+  text-align: center;
 }
 .styles2 > article > img{
   width: 250px;
 }
 .styles2 > article > h1{
   font-size: 32px;
-  text-align: center;
 }
 .styles2 > article > p{
   font-size: 18px;
-  text-align: center;
 }
 
 

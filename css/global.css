@@ -1,0 +1,61 @@
+:root{
+  --c1: #ffffff;
+  --c2: #000000;
+}
+@font-face {
+  font-family: 'Title';
+  src: url(../fonts/JosefinSlab-Bold.ttf);
+}
+@font-face {
+  font-family: 'Text';
+  src: url(../fonts/JosefinSlab-Medium.ttf);
+}
+@font-face {
+  font-family: 'Bold';
+  src: url(../fonts/JosefinSlab-Bold.ttf);
+}
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html{
+  scroll-behavior: smooth;
+}
+body{
+  background-color: var(--c1);
+}
+[id]{
+  scroll-margin-top: 2ex;
+}
+h1{
+  font-family: 'Title';
+}
+p, li, a, span{
+  font-family: 'Text';
+}
+ul{
+  list-style: none;
+}
+a{
+  text-decoration: none;
+}
+b{
+  font-family: 'Bold';
+}
+
+/* FADE */
+.img__fade{
+  opacity: 0;
+  transition: all .8s;
+}
+.transform_show{opacity: 0;}
+.transform_up{transform: translateY(50%)}
+.transform_down{transform: translateY(-50%)}
+.transform_left{transform: translateX(50%)}
+.transform_right{transform: translateX(-50%)}
+
+.img__show{
+  opacity: 1;
+  transform: none;
+}

@@ -1,0 +1,352 @@
+section,
+footer{
+  width: 80%;
+  padding: 50px 0;
+  margin: 0 auto;
+}
+.grid{
+  display: grid;
+  grid-template-columns: 2;
+  grid-template-rows: 1;
+}
+
+/* HEADER */
+.head{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 10px;
+  background-color: #000;
+  z-index: 999;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.head > a > img{
+  width: 220px;
+}
+.header_menu_btn{
+  width: 30px;
+}
+.menu{
+  position: absolute;
+  top: 48px;
+  left: 100%;
+  width: 100%;
+  background-color: #000;
+}
+.menu li{
+  border-bottom: thin solid var(--c1);
+}
+.menu li a{
+  display: block;
+  padding: 15px 0;
+  text-align: center;
+  font-size: 22px;
+  color: var(--c1);
+  text-transform: uppercase;
+}
+
+
+
+/* HOME */
+#home{
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.home__lines{
+  width: 100%;
+  padding: 20px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top: thin solid var(--c2);
+  border-bottom: thin solid var(--c2);
+}
+.home__lines > img{
+  width: 300px;
+  z-index: 2;
+}
+#home > img{
+  width: 250px;
+  position: absolute;
+  opacity: .5;
+  z-index: 1;
+}
+
+
+
+/* FASHION */
+.fashion__bio h1{
+  text-align: center;
+  font-size: 2em;
+}
+.fashion__bio p{
+  text-align: center;
+  font-size: 1em;
+}
+.fashion__contact{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.fashion__contact li{
+  margin-top: 10px;
+}
+.fashion__contact li a{
+  display: block;
+  width: 250px;
+  padding: 10px 5px;
+  text-align: center;
+  color: var(--c2);
+  border: thin solid var(--c2);
+}
+
+
+
+/* PARA ELLAS/ELLOS */
+.her img,
+.him img{
+  width: 250px;
+  padding: 20px 0;
+}
+.forher h1,
+.forhim h1{
+  font-size: 32px;
+  text-align: center;
+}
+.forher p,
+.forhim p{
+  text-align: center;
+}
+.forhim{
+  margin-top: 30px;
+}
+
+
+
+/* STYLES2 */
+.styles2 > article{
+  margin-bottom: 30px;
+}
+.styles2 > article > img{
+  width: 250px;
+}
+.styles2 > article > h1{
+  font-size: 32px;
+  text-align: center;
+}
+.styles2 > article > p{
+  font-size: 18px;
+  text-align: center;
+}
+
+
+/* FOOTER */
+footer{
+  width: 100%;
+  background-color: var(--c2);
+  color: var(--c1);
+  font-size: 12px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (min-width: 700px){
+
+  /* HEADER */
+  .head{
+    padding: 20px 0;
+    justify-content: center;
+  }
+  .head > a > img{
+    width: 300px;
+  }
+  .header_menu_btn{
+    display: none;
+  }
+  .menu{
+    position: initial;
+    width: initial;
+    display: flex;
+    margin-left: 30px;
+  }
+  .menu li{
+    border: thin solid var(--c1);
+    margin-right: 10px;
+  }
+  .menu li a{
+    font-size: 18px;
+    padding: 5px 5px;
+    background-color: var(--c2);
+    transition: all .5s ease;
+  }
+  .menu li a:hover{
+    padding: 5px 20px;
+    background-color: var(--c1);
+    color: var(--c2);
+  }
+
+
+  /* HOME */
+  .home__lines{
+    padding: 50px 0;
+  }
+  .home__lines > img{
+    width: 550px;
+  }
+  #home > img{
+    width: 500px;
+  }
+
+
+
+  /* FASHION */
+  #fashion{
+    justify-content: space-evenly;
+    align-items: center;
+    max-width: 1000px;
+    border-radius: 0 0 5px 5px;
+    box-shadow: 5px 40px 30px 0px rgba(0,0,0,0.15);
+  }
+  .fashion__bio{
+    grid-column: 1/2;
+    display: flex;
+    flex-direction: column;
+    max-width: 390px;
+    align-items: center;
+  }
+  .fashion__bio h1{
+    font-size: 80px;
+  }
+  .fashion__bio p{
+    font-size: 22px;
+  }
+  .fashion__contact{
+    grid-column: 2/3;
+  }
+  .fashion__contact{
+    flex-direction: column;
+  }
+  .fashion__contact li a{
+    font-size: 18px;
+    background-color: var(--c1);
+    transition: all .5s ease;
+  }
+  .fashion__contact li a:hover{
+    background-color: var(--c2);
+    color: var(--c1);
+  }
+
+
+
+  /* PARA ELLAS/ELLOS */
+  .her,
+  .forhim{
+    grid-column: 1/2;
+  }
+  .forher,
+  .him{
+    grid-column: 2/3;
+  }
+  .her img,
+  .him img{
+    width: 400px;
+  }
+  .forher > div{
+    padding: 50px;
+    box-shadow: 40px 0px 30px -1px rgba(0,0,0,0.15);
+  }
+  .forhim > div{
+    padding: 50px;
+    box-shadow: -40px 0px 30px -1px rgba(0,0,0,0.15);
+  }
+  .forher h1{
+    font-size: 80px;
+    text-align: left;
+  }
+  .forher p{
+    text-align: left;
+    font-size: 22px;
+  }
+  .forhim h1{
+    font-size: 80px;
+    text-align: right;
+  }
+  .forhim p{
+    font-size: 22px;
+    text-align: right;
+  }
+  .her,
+  .him,
+  .forher,
+  .forhim{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+
+
+  /* STYLES2 */
+  #styles2{
+    display: grid;
+    grid-template-columns: 3;
+    grid-template-rows: 1;
+  }
+  #styles2 > article > img{
+    width: 300px;
+  }
+  .styles2 > article:nth-of-type(1){
+    grid-column: 1/2;
+  }
+  .styles2 > article:nth-of-type(2){
+    grid-column: 2/3;
+  }
+  .styles2 > article:nth-of-type(3){
+    grid-column: 3/4;
+  }
+  .styles2 > article > h1{
+    margin-top: 15px;
+  }
+  .styles2 > article > p{
+    padding: 0 15px 15px 15px;
+  }
+
+
+
+  /* FOOTER */
+  footer{
+    font-size: 18px;
+  }
+}
